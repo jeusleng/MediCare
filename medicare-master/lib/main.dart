@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:medicare/splash_screen/splash1.dart';
 import '../screens/login_screen.dart';
+import 'homepage.dart';
 
 void main() {
   runApp(const MedicareMain());
@@ -12,10 +12,11 @@ class MedicareMain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Splash1(),
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color.fromARGB(255, 17, 63, 103),
+        fontFamily: "Poppins",
       ),
     );
   }
