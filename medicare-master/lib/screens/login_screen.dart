@@ -8,17 +8,20 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(30.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset('images/login.jpg'),
             Text(
               'Login',
               style: TextStyle(
-                  color: Theme.of(context).primaryColor,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 15),
+                color: Theme.of(context).primaryColor,
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
             ),
             SizedBox(
               height: 20,
@@ -26,7 +29,9 @@ class LoginScreen extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 hintText: 'Username',
-                hintStyle: TextStyle(fontSize: 10),
+                hintStyle: TextStyle(
+                  fontSize: 10,
+                ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
                   borderSide: BorderSide(
@@ -37,7 +42,7 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
             TextField(
               obscureText: true,
@@ -54,7 +59,7 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
             Container(
               width: double.parse('150'),
@@ -83,14 +88,14 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 5,
             ),
             Text(
               '.',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             SizedBox(
-              height: 20,
+              height: 5,
             ),
             Column(
               children: [

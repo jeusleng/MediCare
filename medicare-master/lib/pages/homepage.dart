@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
         children: [
           // page view
           SizedBox(
-            height: 500,
+            height: 600,
             child: PageView(
               controller: _controller,
               children: const [

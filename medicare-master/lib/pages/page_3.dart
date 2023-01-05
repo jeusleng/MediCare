@@ -41,6 +41,9 @@ class _Page3State extends State<Page3> {
                   fontFamily: 'Poppins',
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 width: 250,
                 child: ElevatedButton(
